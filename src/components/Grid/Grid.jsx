@@ -1,9 +1,6 @@
+/* eslint-disable react/prop-types */
 import styles from "./Grid.module.scss";
 
-export const Grid = () => {
-    return (
-        <div className={styles.container}>
-            Componente Grid
-        </div>
-    );
+export const Grid = ({ children }) => {
+  return <section className={styles.container}>{children}</section>;
 };
