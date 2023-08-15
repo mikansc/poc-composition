@@ -1,5 +1,11 @@
+import { TabGroup } from "./components/TabGroup";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <TabGroup />
+    </div>
+  );
 };
 
 export default App;
