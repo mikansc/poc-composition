@@ -1,3 +1,41 @@
+// form component
 .container {
-  /* Adicione aqui o estilo do componente */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 500px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.input,
+.textarea {
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.select {
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  appearance: none;
+}
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
 }
