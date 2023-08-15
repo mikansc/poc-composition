@@ -18,6 +18,11 @@ if [[ ! $1 =~ ^[A-Z][a-zA-Z]*$ ]]; then
     exit 1
 fi
 
+if [ ! -d "src/components" ]; then
+    mkdir src/components
+    touch src/components/index.js
+fi
+
 # Check if the component already exists
 if [ -d "src/components/$1" ]; then
     echo "Component already exists."
