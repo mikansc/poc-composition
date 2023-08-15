@@ -64,6 +64,13 @@ describe(\"$1\", () => {
 
 echo "export * from \"./$1\";" >> src/components/index.js
 
+# ask if user want to commit to git. If false, exit
+read -p "Do you want to commit to git? (y/n) " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    exit 0
+fi
+
 if [ ! -d ".git" ]; then
     git init
     git add .
