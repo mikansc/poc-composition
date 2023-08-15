@@ -1,3 +1,25 @@
 .container {
-  /* Adicione aqui o estilo do componente */
+  width: 100%;
+}
+
+ul.tabContainer {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+li.tab {
+  text-align: center;
+  list-style: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: #fff;
+}
+
+li.tab.activeTab {
+  background-color: #ccc;
+  border-bottom: white;
 }
